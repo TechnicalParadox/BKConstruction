@@ -1,10 +1,6 @@
 /* Variables */
 :root {
-  --light: #f9eded;
-  --light-blue: #1d6768;
-  --sapphire:#337eaa;
-  --dark-blue: #29364f;
-  --dark: #181b26;
+  --bkblue: #1f439b;
 }
 
 * {
@@ -13,10 +9,13 @@
   box-sizing: border-box;
 }
 
+
 header {
-  background-color: blue;
+  border-bottom: 5px solid;
+  border-color: var(--bkblue);
   padding: 20px 35px;
   display: flex;
+  background-color: white;
 }
 
 header nav {
@@ -26,8 +25,8 @@ header nav {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-end;
   list-style: none;
 }
 
@@ -35,6 +34,11 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size:1.55vw;
+  color: black;
+}
+
+body {
+  background-color: lightgray;
 }
 
 .header-logo {
