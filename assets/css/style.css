@@ -17,15 +17,8 @@ a {
   text-decoration: none; /* hide hyperlink decoration (default underline, colors, etc) */
 }
 
-a:hover {
-  color: var(--logobg); /* make links bk blue when hovering */
-  background-color: var(--bkblue);
-  border-radius: 10px;
-}
-
-
 header {
-  padding: 20px 20px; /* padding for edge of header */
+  padding: 10px 20px; /* padding for edge of header */
   background-color: var(--logobg);
 
   display: flex; /* Make header flexbox so items stay positioned correctly */
@@ -46,6 +39,12 @@ header nav {
   margin-left: auto; /* navbar stays aligned to right side of flexbox */
   flex-grow: .7; /* navbar fills 70% of space to the right of logo */
   padding-right: 30px;
+}
+
+header nav a:hover {
+  color: var(--logobg); /* make links bk blue when hovering */
+  background-color: var(--bkblue);
+  border-radius: 10px;
 }
 
 header nav ul {
@@ -88,6 +87,10 @@ body {
 
 /* MEDIA QUERY FOR FULL SIZE SCREENS AND LARGER */
 @media screen and (min-width: 979px) {
+  header nav {
+    flex-grow: .5;
+  }
+
   header nav ul li a {
     font-size: 1.8vw;
     padding: 20px 20px;
@@ -96,5 +99,7 @@ body {
 
 /* MEDIA QUERY FOR LARGE SCREENS AND LARGER */
 @media screen and (min-width: 1400px) {
-
+  header nav {
+    flex-grow: .3;
+  }
 }
