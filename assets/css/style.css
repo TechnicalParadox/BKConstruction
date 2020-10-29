@@ -37,7 +37,7 @@ header {
 
 header nav {
   margin-left: auto; /* navbar stays aligned to right side of flexbox */
-  flex-grow: .7; /* navbar fills 70% of space to the right of logo */
+  flex-grow: .7; /* navbar grows to fit space to right of logo */
   padding-right: 30px;
 }
 
@@ -87,11 +87,11 @@ body {
 
 /* MEDIA QUERY FOR FULL SIZE SCREENS AND LARGER */
 @media screen and (min-width: 979px) {
-  header nav {
+  header nav { /* reduce width of navbar */
     flex-grow: .5;
   }
 
-  header nav ul li a {
+  header nav ul li a { /* make links relatively smaller*/
     font-size: 1.8vw;
     padding: 20px 20px;
   }
@@ -99,7 +99,7 @@ body {
 
 /* MEDIA QUERY FOR LARGE SCREENS AND LARGER */
 @media screen and (min-width: 1400px) {
-  header nav {
+  header nav { /* reduce width of navbar */
     flex-grow: .3;
   }
 }
