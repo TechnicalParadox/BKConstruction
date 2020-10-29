@@ -18,7 +18,9 @@ a {
 }
 
 a:hover {
-  color: var(--bkblue); /* make links bk blue when hovering */
+  color: var(--logobg); /* make links bk blue when hovering */
+  background-color: var(--bkblue);
+  border-radius: 10px;
 }
 
 
@@ -79,13 +81,17 @@ body {
   /* Make navbar links slightly smaller once the screen is big enough */
   header nav ul li a {
     font-size: 2vw;
+    padding: 15px 20px;
   }
 
 }
 
 /* MEDIA QUERY FOR FULL SIZE SCREENS AND LARGER */
 @media screen and (min-width: 979px) {
-
+  header nav ul li a {
+    font-size: 1.8vw;
+    padding: 20px 20px;
+  }
 }
 
 /* MEDIA QUERY FOR LARGE SCREENS AND LARGER */
