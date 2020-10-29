@@ -30,6 +30,10 @@ header {
   align-items: center;
 }
 
+header img {
+  height: 60px;
+}
+
 header nav {
   margin-left: auto;
   flex-grow: .8;
