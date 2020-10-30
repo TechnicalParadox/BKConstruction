@@ -70,9 +70,50 @@ body {
   background-color: var(--bodybg);
 }
 
+/* Hero Styling */
+.hero {
+  height: 88vh;
+  width: 100vw;
+  background-color: red;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-heading {
+  flex: 1;
+  height: 60%;
+}
+
+.hero-heading h1 {
+  padding: 20px 60px;
+}
+
+.hero-about {
+  flex: 1;
+  background-color: var(--bkblue);
+  color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+.hero-about h2 {
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.hero-about p {
+  padding: 10px 20px 20px 20px;
+  text-align: justify;
+}
+/* End Hero Styling */
+
 /* MEDIA QUERY FOR TABLETS AND LARGER */
 @media screen and (min-width: 574px) {
-
+  .hero { /* Change hero display to columns if screen is big enough */
+    flex-direction: row;
+  }
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND LARGER */
@@ -82,6 +123,8 @@ body {
     font-size: 2vw;
     padding: 15px 20px;
   }
+
+  /* TODO switch hero from flexbox to grid */
 
 }
 
