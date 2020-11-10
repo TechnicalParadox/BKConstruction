@@ -30,6 +30,8 @@ header {
 }
 
 .header-logo img {
+  /* Hide on mobile */
+  display: none;
   /* keep logo a nice height and away from left side of vp */
   height: 60px;
   padding: 0 30px;
@@ -72,9 +74,10 @@ body {
 
 /* Hero Styling */
 .hero {
-  height: 88vh;
   width: 100vw;
-  background-color: red;
+  background-image: url(../images/heroRoll/job1.jpg);
+  background-position: 50% 70%;
+  background-size: cover;
   padding: 20px 60px;
   display: flex;
   flex-direction: column;
@@ -112,7 +115,14 @@ body {
 /* End Hero Styling */
 
 /* MEDIA QUERY FOR TABLETS AND LARGER */
-@media screen and (min-width: 574px) {
+@media screen and (min-width: 574px)
+{
+  /*show logo*/
+  #logo
+  {
+    display: initial;
+  }
+
   /* TODO switch hero from flexbox to grid */
   .hero {
     display: grid;
@@ -136,7 +146,6 @@ body {
   /* Make navbar links slightly smaller once the screen is big enough */
   header nav ul li a {
     font-size: 2vw;
-    padding: 15px 20px;
   }
 
   .hero-heading {
@@ -156,11 +165,12 @@ body {
   }
 
   header nav ul li a { /* make links relatively smaller*/
-    font-size: 1.8vw;
+    font-size: 1.3vw;
     padding: 20px 20px;
   }
 
   .hero {
+    height: 88vh;
     grid-template-columns: repeat(6, 1fr);
   }
 
